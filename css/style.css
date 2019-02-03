@@ -33,7 +33,7 @@ h1 {
 
 h2, .larger {
     color: #6c3695;
-    font-size: 20.4px; /* 17 * (1.2) */
+    font-size: 20.4px; /* 17 * 1.2 */
 }
 
 h3 {
@@ -42,6 +42,10 @@ h3 {
 
 p {
     color: #311845;
+}
+
+.smaller {
+    font-size: 14.17px;  /* 17 / 1.2 */
 }
 
 .lighter {
@@ -58,15 +62,11 @@ nav {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: #8844bb;
     height: 100%;
     position: fixed;
     width: 33.33vw;
-}
-
-nav-top, nav-bottom {
-    width: 100%;
 }
 
 .nav {
@@ -81,7 +81,6 @@ nav img {
 nav a {
     color: white;
     display: block;
-    font-size: 14.17px;  /* 6 / 1.2 */
     letter-spacing: 0.1em;
     padding: 0 3.33vw;
 }
@@ -105,7 +104,7 @@ nav a {
 }
 
 .creations, .personal, .social {
-    line-height: 1.9em;
+    line-height: 1.8em;
 }
 
 /* # MAIN **************************************************************************************************** */
@@ -116,11 +115,11 @@ main {
 }
 
 .hello {
-    padding: 1vw 0;
+    padding: 0;
 }
 
 .passions {
-    padding: 2vw 0;
+    padding: 3vw 0 10vw;
 }
 
 .passion {
@@ -134,8 +133,8 @@ main {
     display: grid;
     grid-auto-flow: row;
     grid-row-gap: 2vw;
-    grid-template-columns: 57vw;
-    grid-template-rows: 77vw;
+    grid-template-columns: 60vw;
+    grid-template-rows: 82vw;
     justify-items: center;
     padding: 5vw 0;
   }
@@ -144,8 +143,8 @@ main {
     display: grid;
     align-items: start;
     grid-row-gap: 2vw;
-    grid-template-columns: 57vw;
-    grid-template-rows: 57vw 18vw;
+    grid-template-columns: 60vw;
+    grid-template-rows: 60vw 20vw;
     justify-items: center
   }
 
