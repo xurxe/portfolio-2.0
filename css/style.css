@@ -1,0 +1,166 @@
+/* COLOR SCHEME https://www.color-hex.com/color/8844bb */
+
+/* # GENERAL ************************************************************************************************* */
+
+@charset "UFT-8";
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* # TYPOGRAPHY ********************************************************************************************** */
+
+/* 
+- base size: min 16.5px, max 24px
+- modular scale: 1.2 small screen, 1.5 large screen
+*/
+
+html {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+h1 {
+    color: #8844bb;
+    font-size: 24.48px; /* 17 * (1.2^2) */
+}
+
+h2, .larger {
+    color: #6c3695;
+    font-size: 20.4px; /* 17 * (1.2) */
+}
+
+h3 {
+    color: #512870;
+}
+
+p {
+    color: #311845;
+}
+
+.lighter {
+    opacity: 0.8;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* # NAVIGATION BAR ****************************************************************************************** */
+
+nav {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #8844bb;
+    height: 100%;
+    position: fixed;
+    width: 33.33vw;
+}
+
+nav-top, nav-bottom {
+    width: 100%;
+}
+
+.nav {
+    padding: 3.33vw 0;
+    width: 33.33vw;
+}
+
+nav img {
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    display: block;
+    font-size: 14.17px;  /* 6 / 1.2 */
+    letter-spacing: 0.1em;
+    padding: 0 3.33vw;
+}
+
+.home-name { /* MAYBE: integrate with logo */
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 0;
+}
+
+.home-name-first {
+    font-size: 26px;
+    letter-spacing: 0.2em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+}
+
+.home-name-last {
+    font-size: 17px;
+    letter-spacing: 0.45em;
+    text-transform: lowercase;
+}
+
+.creations, .personal, .social {
+    line-height: 1.9em;
+}
+
+/* # MAIN **************************************************************************************************** */
+
+main {
+    margin-left: 33.33vw;
+    padding: 3.33vw;
+}
+
+.hello {
+    padding: 1vw 0;
+}
+
+.passions {
+    padding: 2vw 0;
+}
+
+.passion {
+    padding: 1vw 0;
+}
+
+/* # CREATION GRID ******************************************************************************************* */
+
+.grid {
+    align-items: start;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 2vw;
+    grid-template-columns: 57vw;
+    grid-template-rows: 77vw;
+    justify-items: center;
+    padding: 5vw 0;
+  }
+
+  .subgrid {
+    display: grid;
+    align-items: start;
+    grid-row-gap: 2vw;
+    grid-template-columns: 57vw;
+    grid-template-rows: 57vw 18vw;
+    justify-items: center
+  }
+
+  .thumbnail {
+    align-self: stretch;
+    grid-row:1;
+    grid-column:1;
+    justify-self: stretch;
+  }
+  
+  .caption {
+    align-self: start;
+    justify-self: start;
+    grid-row: 2;
+    grid-column: 1;
+    padding: 1vw;
+    line-height: 1.2em;
+  }
