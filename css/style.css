@@ -32,6 +32,7 @@ html {
 h1 {
     color: #8844bb;
     font-size: 24.48px; /* 17 * (1.2^2) */
+    margin-bottom: 0.5em;
 }
 
 h2, .larger {
@@ -81,6 +82,16 @@ nav a {
     display: block;
 }
 
+.smaller:hover {
+    color: #8844bb;
+    background-color: white;
+}
+
+.active {
+    color: #8844bb;
+    background-color: white;
+}
+
 .home-logo {
     padding-bottom: 2px;
 }
@@ -107,8 +118,15 @@ nav img {
 }
 
 .creations, .personal {
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.smaller {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* # MAIN **************************************************************************************************** */
@@ -127,7 +145,7 @@ main {
 }
 
 .passions {
-    padding: 1em 0 1em;
+    padding: 0 0 1em;
 }
 
 .passion {
@@ -163,6 +181,9 @@ main {
     margin: 10px 0px;
     font-size: 15px;
 }
+
+/* # MEDIA QUERIES ******************************************************************************************* */
+
 
 @media only screen and (min-width: 600px) and (max-width: 1000px){
 
