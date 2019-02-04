@@ -68,8 +68,7 @@ nav {
     width: 120px;
     font-size: 14px;
     top: 0;
-    left: 0;
-    
+    left: 0;    
 }
 
 nav > div {
@@ -107,7 +106,7 @@ nav img {
     text-transform: lowercase;
 }
 
-.creations, .personal, .social {
+.creations, .personal {
     letter-spacing: 0.05em;
     line-height: 30px;
 }
@@ -116,7 +115,11 @@ nav img {
 
 main {
     margin-left: 120px;
-    padding: 3.33vw;
+    margin-bottom: 30px;
+}
+
+.intro {
+    padding: 15px;
 }
 
 .hello {
@@ -124,7 +127,7 @@ main {
 }
 
 .passions {
-    padding: 1em 0 2em;
+    padding: 1em 0 1em;
 }
 
 .passion {
@@ -133,44 +136,35 @@ main {
 
 /* # CREATION GRID ******************************************************************************************* */
 
-.grid {
-    align-items: start;
-    display: grid;
-    grid-auto-flow: row;
-    grid-column-gap: 2vw;
-    grid-row-gap: 2vw;
-    grid-template-columns: 55vw;
-    grid-template-rows: auto;
-    justify-items: center;
+.creation-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
-  .subgrid {
-    display: grid;
-    align-items: start;
-    grid-row-gap: 2vw;
-    grid-template-columns: 55vw;
-    grid-template-rows: 55vw 4em;
-    justify-items: center
-  }
+.creation {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 15px;
+    min-width: 80px;
+    max-width: 290px;
+}
 
-  .thumbnail {
-    align-self: stretch;
-    grid-row:1;
-    grid-column:1;
-    justify-self: stretch;
-  }
-  
-  .caption {
-    align-self: start;
-    justify-self: start;
-    grid-row: 2;
-    grid-column: 1;
-    line-height: 1.2em;
-  }
+.thumbnail {
+    width: 100%;
+}
+
+.caption {
+    margin: 10px 0px;
+    font-size: 15px;
+}
 
 @media only screen and (min-width: 600px) and (max-width: 1000px){
-
-    /* # TYPOGRAPHY ********************************************************************** */
 
     html {
         font-size: calc(17px + (22 - 17) * (100vw - 600px) / (1000 - 600));
@@ -184,46 +178,28 @@ main {
         font-size: calc(20.4px + (33 - 20.4) * (100vw - 600px) / (1000 - 600));
     }
 
-    /* # CREATION GRID ******************************************************************* */
-
-    .grid {
-        grid-template-columns: 36vw 36vw;
-        grid-template-rows: auto;
-    }
-
-    .subgrid {
-        grid-template-columns: 36vw;
-        grid-template-rows: 36vw 4em;
+    .intro {
+        padding: calc(15px + (30 - 15) * (100vw - 600px) / (1000 - 600));
     }
 
 }
 
 @media only screen and (min-width: 1000px) {
 
-    /* # TYPOGRAPHY ********************************************************************** */
-
     html {
         font-size: 22px;
     }
     
     h1 {
-        font-size: 49.5px; /* 24 * (1.5^2) */
+        font-size: 49.5px; /* 22 * (1.5^2) */
     }
     
     h2, .larger {
-        font-size: 33px; /* 24 * 1.7 */
+        font-size: 33px; /* 22 * 1.5 */
     }
 
-    /* # CREATION GRID ******************************************************************* */
-
-    .grid {
-        grid-template-columns: 25.5vw 25.5vw 25.5vw;
-        grid-template-rows: auto;
-    }
-
-    .subgrid {
-        grid-template-columns: 25.5vw;
-        grid-template-rows: 25.5vw 4em;
+    .intro {
+        padding: 30px;
     }
 
 }
