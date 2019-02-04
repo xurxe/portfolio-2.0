@@ -109,9 +109,7 @@ nav img {
 
 .creations, .personal, .social {
     letter-spacing: 0.05em;
-    line-height: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    line-height: 30px;
 }
 
 /* # MAIN **************************************************************************************************** */
@@ -228,29 +226,6 @@ main {
         grid-template-rows: 25.5vw 4em;
     }
 
-}
-
-@media only screen and (min-height: 300px) {
-
-    /* # NAVIGATION BAR ****************************************************************** */
-
-    .creations, .personal, .social {
-        line-height: calc(25px + (30 - 25) * (100vh - 600px) / (600 - 300));
-        padding-top: calc(10px + (15 - 10) * (100vh - 600px) / (600 - 300));
-        padding-bottom: calc(10px + (15 - 10) * (100vh - 600px) / (600 - 300));
-    }
-
-}
-
-@media only screen and (min-height: 600px) {
-
-    /* # NAVIGATION BAR ****************************************************************** */
-
-    .creations, .personal, .social {
-        line-height: 30px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
 }
 
 
