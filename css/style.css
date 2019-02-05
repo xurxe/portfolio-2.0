@@ -206,7 +206,7 @@ main {
     color: #622B8D;
     font-weight: 900;
     padding: 1.5em 0 0.5em;
-    width: 90%;
+    width: auto;
 }
 
 .skill-item-flex {
@@ -215,7 +215,7 @@ main {
     flex-direction: row;
     justify-items: flex-start;
     padding: 10px 5px 10px 0;
-    width: 94%;
+    width: 90%;
 }
 
 .skill-name {
