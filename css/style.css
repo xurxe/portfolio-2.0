@@ -16,7 +16,7 @@
 /* # TYPOGRAPHY ********************************************************************************************** */
 
 /* 
-- base size: min 17px, max 24px
+- base size: min 17px, max 25px
 - modular scale: 1.2 small screen, 1.5 large screen
 */
 
@@ -25,10 +25,10 @@ html {
     font-size: 17px;
     font-weight: 300;
     letter-spacing: 0.05em;
-    text-align: left;
-    padding-right: 1vw;
     max-width: 100%;
     overflow-x: hidden;
+    padding-right: 1vw;
+    text-align: left;
 }
 
 h1 {
@@ -44,10 +44,12 @@ h2, .larger {
 
 h3 {
     color: #512870;
+    font-size: 1rem;
 }
 
 p {
     color: #311845;
+    font-size: 1rem;
 }
 
 .lighter {
@@ -63,21 +65,21 @@ p {
 
 nav {
     align-items: flex-start;
+    background-color: #8844bb;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    background-color: #8844bb;
-    height: 100%;
-    position: fixed;
-    width: 130px;
-    top: 0;
-    left: 0;  
     font-size: 15px;
+    height: 100%;
+    justify-content: flex-start;
+    left: 0;  
     letter-spacing: 1.5px;
+    position: fixed;
+    top: 0;
+    width: 130px;
 }
 
 nav > div {
-    width: 100%;
+    width: 105%;
 }
 
 nav a {
@@ -86,13 +88,13 @@ nav a {
 }
 
 .smaller:hover {
-    color: #8844bb;
     background-color: white;
+    color: #8844bb;
 }
 
 .active {
-    color: #8844bb;
     background-color: white;
+    color: #8844bb;
 }
 
 .home-logo {
@@ -136,12 +138,14 @@ nav img {
 /* # MAIN **************************************************************************************************** */
 
 main {
-    margin-left: 130px;
     margin-bottom: 30px;
+    margin-left: 130px;
+    padding: 15px;
+    width: calc(98vw - 130px);
 }
 
 .intro {
-    padding: 15px;
+    width: 100%;
 }
 
 .hello {
@@ -160,42 +164,76 @@ main {
 /* # CREATION GRID ******************************************************************************************* */
 
 .creation-flex {
+    align-items: flex-start;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
-    align-content: flex-start;
+    padding-top: 30px;
 }
 
 .creation {
+    align-items: flex-start;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    padding: 15px;
-    min-width: 80px;
     max-width: 290px;
+    min-width: 80px;
+    padding-right: 15px;
 }
 
 .thumbnail {
+    margin-top: 15px;
     width: 100%;
 }
 
 .caption {
-    margin: 10px 0px;
     font-size: 15px;
     letter-spacing: 1.5px;
+    margin: 10px 0px 45px;
+}
+
+/* # SKILL FLEX ********************************************************************************************** */
+
+.skill-flex {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    width: calc(98vw - 130px);
+}
+
+.skill-type {
+    color: #622B8D;
+    font-weight: 900;
+    grid-column: 1;
+    padding: 1.5em 0 0.5em;
+    width: 100%;
+}
+
+.skill-item-flex {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    padding: 5px 30px 5px 0;
+    width: 100%;
+}
+
+.skill-name {
+    width: 11rem;
+}
+
+.skill-level {
+    height: 1rem;
 }
 
 
-
-/* # MEDIA QUERIES ******************************************************************************************* */
-.about h2 {
+/* # ABOUT *************************************************************************************************** */
+.questions h2 {
     padding-bottom: 1em;
 }
 
-.about p {
+.questions p {
     padding-bottom: 1.5em;
 }
 
@@ -208,24 +246,57 @@ main {
     padding-bottom: 1.5em;
 }
 
+/* # CONTACT ************************************************************************************************* */
+
+.contact-flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 45px;
+}
+
+.contact-flex a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0.3em 0;
+}
+
+.contact-flex img {
+    width: 45px;
+    height: 45px;
+}
+
+.contact-flex p {
+    width: 14em;
+    padding-left: 1em;
+    color: #512870;
+
+}
+
+
 /* # MEDIA QUERIES ******************************************************************************************* */
 
 @media only screen and (min-width: 600px) and (max-width: 1000px){
 
     html {
-        font-size: calc(17px + (22 - 17) * (100vw - 600px) / (1000 - 600));
+        font-size: calc(17px + (25 - 17) * (100vw - 600px) / (1000 - 600));
     }
     
     h1 {
-        font-size: calc(24.48px + (49.5 - 24.48) * (100vw - 600px) / (1000 - 600));
+        font-size: calc(24.48px + (58.5 - 24.48) * (100vw - 600px) / (1000 - 600));
     }
     
     h2, .larger {
-        font-size: calc(20.4px + (33 - 20.4) * (100vw - 600px) / (1000 - 600));
+        font-size: calc(20.4px + (39 - 20.4) * (100vw - 600px) / (1000 - 600));
     }
 
-    .intro {
-        padding: calc(15px + (30 - 15) * (100vw - 600px) / (1000 - 600));
+    main {
+        padding: calc(15px + (38 - 15) * (100vw - 600px) / (1000 - 600));
+    }
+
+    .skill-name {
+        margin-left: calc(0px + (275 - 0) * (100vw - 600px) / (1000 - 600));
     }
 
 }
@@ -244,10 +315,13 @@ main {
         font-size: 39px; /* 22 * 1.5 */
     }
 
-    .intro {
-        padding: 30px;
+    main {
+        padding: 38px;
+    }
+
+    .skill-name {
+        margin-left: 275px;
     }
 
 }
-
 
