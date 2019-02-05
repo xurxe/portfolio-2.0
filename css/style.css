@@ -149,6 +149,7 @@ main {
 }
 
 .hello {
+    max-width: 12.5em;
     padding: 0;
 }
 
