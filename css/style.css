@@ -178,6 +178,7 @@ main {
     justify-content: flex-start;
     max-width: 290px;
     min-width: 80px;
+    padding-right: 15px;
 }
 
 .thumbnail {
@@ -262,12 +263,12 @@ main {
 }
 
 .contact-flex img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 
 .contact-flex p {
-    width: 15em;
+    width: 14em;
     padding-left: 1em;
     color: #512870;
 
