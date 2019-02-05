@@ -27,7 +27,7 @@ html {
     letter-spacing: 0.05em;
     max-width: 100%;
     overflow-x: hidden;
-    padding-right: 1vw;
+    padding-right: 5px;
     text-align: left;
 }
 
@@ -87,7 +87,7 @@ nav a {
     display: block;
 }
 
-.smaller:hover {
+.highlight:hover {
     background-color: white;
     color: #8844bb;
 }
@@ -102,8 +102,8 @@ nav a {
 }
 
 nav img {
-    width: 100px;
     height: 100px;
+    width: 100px;
 }
 
 .home-name { /* MAYBE: integrate with logo */
@@ -129,7 +129,7 @@ nav img {
     padding: 15px 0;
 }
 
-.smaller {
+.highlight {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -140,7 +140,7 @@ nav img {
 main {
     margin-bottom: 30px;
     margin-left: 130px;
-    padding: 15px;
+    padding: 15px 10px 15px 15px;
     width: calc(98vw - 130px);
 }
 
@@ -161,7 +161,7 @@ main {
 }
 
 
-/* # CREATION GRID ******************************************************************************************* */
+/* # CREATION FLEX ******************************************************************************************* */
 
 .creation-flex {
     align-items: flex-start;
@@ -178,7 +178,7 @@ main {
     justify-content: flex-start;
     max-width: 290px;
     min-width: 80px;
-    padding-right: 15px;
+    padding-right: 5px;
 }
 
 .thumbnail {
@@ -205,7 +205,6 @@ main {
 .skill-type {
     color: #622B8D;
     font-weight: 900;
-    grid-column: 1;
     padding: 1.5em 0 0.5em;
     width: 100%;
 }
@@ -249,16 +248,16 @@ main {
 /* # CONTACT ************************************************************************************************* */
 
 .contact-flex {
+    align-items: center;
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
     padding-top: 45px;
 }
 
 .contact-flex a {
+    align-items: center;
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
     padding: 0.3em 0;
 }
 
@@ -271,7 +270,7 @@ main {
     width: 14em;
     padding-left: 1em;
     color: #512870;
-
+    font-size: 15px;
 }
 
 
