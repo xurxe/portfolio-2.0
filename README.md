@@ -1,6 +1,6 @@
 # My professional portfolio
 
-Hi! My name is Xurxe and this is my second attempt at a professional portfolio. For now I have only used HTML and CSS. Looking forward to improve it as I gain more skills.  
+Hi! My name is Xurxe and this is my second attempt at a professional portfolio. For now I have only used HTML and CSS. Looking forward to improving it as I gain more skills!
 
 I learned a lot and made lots of mistakes in my first attempt (https://github.com/xurxe/portfolio); that's why I decided to completely rebuild it and make this Portfolio 2.0.
 
