@@ -16,7 +16,7 @@
 /* # TYPOGRAPHY ********************************************************************************************** */
 
 /* 
-- base size: min 17px, max 24px
+- base size: min 17px, max 25px
 - modular scale: 1.2 small screen, 1.5 large screen
 */
 
@@ -25,10 +25,10 @@ html {
     font-size: 17px;
     font-weight: 300;
     letter-spacing: 0.05em;
-    text-align: left;
-    padding-right: 1vw;
     max-width: 100%;
     overflow-x: hidden;
+    padding-right: 1vw;
+    text-align: left;
 }
 
 h1 {
@@ -43,13 +43,13 @@ h2, .larger {
 }
 
 h3 {
-    font-size: 1rem;
     color: #512870;
+    font-size: 1rem;
 }
 
 p {
-    font-size: 1rem;
     color: #311845;
+    font-size: 1rem;
 }
 
 .lighter {
@@ -65,17 +65,17 @@ p {
 
 nav {
     align-items: flex-start;
+    background-color: #8844bb;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    background-color: #8844bb;
-    height: 100%;
-    position: fixed;
-    width: 130px;
-    top: 0;
-    left: 0;  
     font-size: 15px;
+    height: 100%;
+    justify-content: flex-start;
+    left: 0;  
     letter-spacing: 1.5px;
+    position: fixed;
+    top: 0;
+    width: 130px;
 }
 
 nav > div {
@@ -88,13 +88,13 @@ nav a {
 }
 
 .smaller:hover {
-    color: #8844bb;
     background-color: white;
+    color: #8844bb;
 }
 
 .active {
-    color: #8844bb;
     background-color: white;
+    color: #8844bb;
 }
 
 .home-logo {
@@ -138,10 +138,10 @@ nav img {
 /* # MAIN **************************************************************************************************** */
 
 main {
-    margin-left: 130px;
     margin-bottom: 30px;
-    width: calc(98vw - 130px);
+    margin-left: 130px;
     padding: 15px;
+    width: calc(98vw - 130px);
 }
 
 .intro {
@@ -164,41 +164,38 @@ main {
 /* # CREATION GRID ******************************************************************************************* */
 
 .creation-flex {
+    align-items: flex-start;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
-    align-content: flex-start;
     padding-top: 30px;
 }
 
 .creation {
+    align-items: flex-start;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    min-width: 80px;
     max-width: 290px;
+    min-width: 80px;
 }
 
 .thumbnail {
-    width: 100%;
     margin-top: 15px;
+    width: 100%;
 }
 
 .caption {
-    margin: 10px 0px;
     font-size: 15px;
     letter-spacing: 1.5px;
-    margin-bottom: 45px;
+    margin: 10px 0px 45px;
 }
 
 /* # SKILL FLEX ********************************************************************************************** */
 
 .skill-flex {
-    display: flex;
     align-items: flex-start;
+    display: flex;
     flex-direction: column;
     justify-items: flex-start;
     width: calc(98vw - 130px);
@@ -208,22 +205,21 @@ main {
     color: #622B8D;
     font-weight: 900;
     grid-column: 1;
-    justify-self: flex-start;
-    width: 100%;
     padding: 1.5em 0 0.5em;
+    width: 100%;
 }
 
 .skill-item-flex {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-items: flex-start;
-    align-items: center;
-    width: 100%;
     padding: 5px 30px 5px 0;
+    width: 100%;
 }
 
 .skill-name {
-    width: 18rem;
+    width: 11rem;
 }
 
 .skill-level {
@@ -266,7 +262,11 @@ main {
     }
 
     main {
-        padding: calc(15px + (30 - 15) * (100vw - 600px) / (1000 - 600));
+        padding: calc(15px + (38 - 15) * (100vw - 600px) / (1000 - 600));
+    }
+
+    .skill-name {
+        margin-left: calc(0px + (275 - 0) * (100vw - 600px) / (1000 - 600));
     }
 
 }
@@ -286,7 +286,11 @@ main {
     }
 
     main {
-        padding: 30px;
+        padding: 38px;
+    }
+
+    .skill-name {
+        margin-left: 275px;
     }
 
 }
