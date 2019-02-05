@@ -227,12 +227,12 @@ main {
 }
 
 
-/* # MEDIA QUERIES ******************************************************************************************* */
-.about h2 {
+/* # ABOUT *************************************************************************************************** */
+.questions h2 {
     padding-bottom: 1em;
 }
 
-.about p {
+.questions p {
     padding-bottom: 1.5em;
 }
 
@@ -244,6 +244,35 @@ main {
 .biography p {
     padding-bottom: 1.5em;
 }
+
+/* # CONTACT ************************************************************************************************* */
+
+.contact-flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 45px;
+}
+
+.contact-flex a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0.3em 0;
+}
+
+.contact-flex img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-flex p {
+    width: 15em;
+    padding-left: 1em;
+    color: #512870;
+
+}
+
 
 /* # MEDIA QUERIES ******************************************************************************************* */
 
