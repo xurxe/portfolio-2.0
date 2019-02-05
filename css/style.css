@@ -198,6 +198,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
+    overflow-x: hidden;
     width: calc(100vw - 130px);
 }
 
