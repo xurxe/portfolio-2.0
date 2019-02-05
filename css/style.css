@@ -140,8 +140,8 @@ nav img {
 main {
     margin-bottom: 30px;
     margin-left: 130px;
-    padding: 15px;
-    width: calc(98vw - 130px);
+    padding: 15px 15px 15px 15px;
+    width: calc(100vw - 130px);
 }
 
 .intro {
@@ -161,7 +161,7 @@ main {
 }
 
 
-/* # CREATION GRID ******************************************************************************************* */
+/* # CREATION FLEX ******************************************************************************************* */
 
 .creation-flex {
     align-items: flex-start;
@@ -199,13 +199,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
-    width: calc(98vw - 130px);
+    width: calc(96vw - 130px);
 }
 
 .skill-type {
     color: #622B8D;
     font-weight: 900;
-    grid-column: 1;
     padding: 1.5em 0 0.5em;
     width: 100%;
 }
@@ -215,12 +214,13 @@ main {
     display: flex;
     flex-direction: row;
     justify-items: flex-start;
-    padding: 5px 30px 5px 0;
+    padding: 10px;
     width: 100%;
 }
 
 .skill-name {
-    width: 11rem;
+    width: 9rem;
+    flex-shrink: 0;
 }
 
 .skill-level {
