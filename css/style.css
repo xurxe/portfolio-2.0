@@ -199,7 +199,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
-    width: calc(98vw - 130px);
+    width: calc(96vw - 130px);
 }
 
 .skill-type {
@@ -214,12 +214,13 @@ main {
     display: flex;
     flex-direction: row;
     justify-items: flex-start;
-    padding: 5px 30px 5px 0;
+    padding: 10px;
     width: 100%;
 }
 
 .skill-name {
-    width: 11rem;
+    width: 9rem;
+    flex-shrink: 0;
 }
 
 .skill-level {
