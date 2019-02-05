@@ -43,10 +43,12 @@ h2, .larger {
 }
 
 h3 {
+    font-size: 1rem;
     color: #512870;
 }
 
 p {
+    font-size: 1rem;
     color: #311845;
 }
 
@@ -138,10 +140,12 @@ nav img {
 main {
     margin-left: 130px;
     margin-bottom: 30px;
+    width: calc(98vw - 130px);
+    padding: 15px;
 }
 
 .intro {
-    padding: 15px;
+    width: 100%;
 }
 
 .hello {
@@ -165,6 +169,7 @@ main {
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: flex-start;
+    padding-top: 30px;
 }
 
 .creation {
@@ -173,74 +178,56 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    padding: 15px;
     min-width: 80px;
     max-width: 290px;
 }
 
 .thumbnail {
     width: 100%;
+    margin-top: 15px;
 }
 
 .caption {
     margin: 10px 0px;
     font-size: 15px;
     letter-spacing: 1.5px;
+    margin-bottom: 45px;
 }
 
-/* # SKILL GRID ********************************************************************************************** */
+/* # SKILL FLEX ********************************************************************************************** */
 
-.skill-grid {
-    display: grid;
-    align-items: start;
-    grid-auto-flow: row;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-items: start;
-    padding: 15px;
-    font-size: 14px;
-}
-
-.skill-type {
-    padding: 20px 0px 10px;
-}
-
-.skill-type-grid {
-    display: grid;
-    align-items: start;
-    grid-auto-flow: row;
-    grid-template-columns: 72vw;
-    grid-template-rows: auto;
-    justify-items: start;
-    grid-row-gap: 15px;
-}
-
-.skill-item-grid {
-    display: grid;
-    grid-auto-flow: column;
-    grid-column-gap: 1vw;
-    grid-template-columns: 31vw 29vw;
-    grid-template-rows: auto;
-    justify-items: start;
-    align-items: end;
+.skill-flex {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-items: flex-start;
+    width: calc(98vw - 130px);
 }
 
 .skill-type {
     color: #622B8D;
     font-weight: 900;
     grid-column: 1;
-    justify-self: start;
+    justify-self: flex-start;
+    width: 100%;
+    padding: 30px 0 10px;
+}
+
+.skill-item-flex {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 5px 30px 5px 0;
 }
 
 .skill-name {
-    grid-column: 1; grid-row: 1;
+    width: 18rem;
 }
 
 .skill-level {
-    grid-column: 2; grid-row: 1;
-    height: 1.5em;
+    height: 1rem;
 }
 
 
@@ -267,18 +254,18 @@ main {
 @media only screen and (min-width: 600px) and (max-width: 1000px){
 
     html {
-        font-size: calc(17px + (22 - 17) * (100vw - 600px) / (1000 - 600));
+        font-size: calc(17px + (25 - 17) * (100vw - 600px) / (1000 - 600));
     }
     
     h1 {
-        font-size: calc(24.48px + (49.5 - 24.48) * (100vw - 600px) / (1000 - 600));
+        font-size: calc(24.48px + (58.5 - 24.48) * (100vw - 600px) / (1000 - 600));
     }
     
     h2, .larger {
-        font-size: calc(20.4px + (33 - 20.4) * (100vw - 600px) / (1000 - 600));
+        font-size: calc(20.4px + (39 - 20.4) * (100vw - 600px) / (1000 - 600));
     }
 
-    .intro {
+    main {
         padding: calc(15px + (30 - 15) * (100vw - 600px) / (1000 - 600));
     }
 
@@ -298,37 +285,8 @@ main {
         font-size: 39px; /* 22 * 1.5 */
     }
 
-    .intro {
+    main {
         padding: 30px;
-    }
-
-    .skill-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 15px;
-        grid-row-gap: 30px;
-        font-size: 1rem;
-    }
-
-    .skill-type {
-        padding: 0;
-        grid-template-columns: 9em;
-    }
-
-    .skill-type-grid {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        justify-items: start;
-        grid-row-gap: 15px;
-    }
-
-    .skill-item-grid {
-        display: grid;
-        grid-auto-flow: column;
-        grid-column-gap: 1vw;
-        grid-template-columns: 12em 100px;
-        grid-template-rows: auto;
-        justify-items: start;
-        align-items: end;
     }
 
 }
